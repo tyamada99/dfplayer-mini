@@ -1,13 +1,16 @@
-input.onButtonPressed(Button.A, function () {
+input.onButtonPressed(Button.A, function on_button_pressed_a() {
+    
     if (ボリューム > 0) {
         ボリューム = ボリューム - 1
     }
+    
     dfplayermini.setVolume(ボリューム)
 })
-input.onGesture(Gesture.Shake, function () {
+input.onGesture(Gesture.Shake, function on_gesture_shake() {
     dfplayermini.press(dfplayermini.playType.PlayNext)
 })
-input.onButtonPressed(Button.AB, function () {
+input.onButtonPressed(Button.AB, function on_button_pressed_ab() {
+    
     if (再生中) {
         再生中 = false
         dfplayermini.press(dfplayermini.playType.Pause)
@@ -17,11 +20,14 @@ input.onButtonPressed(Button.AB, function () {
         dfplayermini.press(dfplayermini.playType.Play)
         basic.showIcon(IconNames.EigthNote)
     }
+    
 })
-input.onButtonPressed(Button.B, function () {
+input.onButtonPressed(Button.B, function on_button_pressed_b() {
+    
     if (ボリューム < 30) {
         ボリューム = ボリューム + 1
     }
+    
     dfplayermini.setVolume(ボリューム)
 })
 let ボリューム = 0
