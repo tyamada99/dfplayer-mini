@@ -9,7 +9,9 @@ input.onButtonPressed(Button.A, function () {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    dfplayermini.press(dfplayermini.playType.PlayNext)
+    if (再生中) {
+        dfplayermini.press(dfplayermini.playType.PlayNext)
+    }
 })
 input.onButtonPressed(Button.AB, function () {
     if (再生中) {
