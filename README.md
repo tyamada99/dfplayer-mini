@@ -53,8 +53,9 @@ MakeCode でこのリポジトリを編集します。
 
 ![生成されたブロック](https://github.com/tyamada99/dfplayer-mini/raw/master/.github/makecode/blocks.png)
 
+<!--
 #### メタデータ (検索、レンダリングに使用)
 
 * for PXT/microbit
 <script src="https://makecode.com/gh-pages-embed.js"></script><script>makeCodeRender("{{ site.makecode.home_url }}", "{{ site.github.owner_name }}/{{ site.github.repository_name }}");</script>
-
+-->
