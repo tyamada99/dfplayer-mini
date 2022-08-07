@@ -3,6 +3,10 @@ input.onButtonPressed(Button.A, function () {
         ボリューム = ボリューム - 1
     }
     dfplayermini.setVolume(ボリューム)
+    basic.showNumber(ボリューム)
+    if (再生中) {
+        basic.showIcon(IconNames.EigthNote)
+    }
 })
 input.onGesture(Gesture.Shake, function () {
     dfplayermini.press(dfplayermini.playType.PlayNext)
@@ -23,13 +27,17 @@ input.onButtonPressed(Button.B, function () {
         ボリューム = ボリューム + 1
     }
     dfplayermini.setVolume(ボリューム)
+    basic.showNumber(ボリューム)
+    if (再生中) {
+        basic.showIcon(IconNames.EigthNote)
+    }
 })
 let ボリューム = 0
 let 再生中 = false
 dfplayermini.connect(SerialPin.P0, SerialPin.P1)
+basic.clearScreen()
 再生中 = false
-ボリューム = 10
-dfplayermini.setVolume(ボリューム)
+dfplayermini.press(dfplayermini.playType.Pause)
 dfplayermini.playLoopAllFiles()
-dfplayermini.press(dfplayermini.playType.Play)
-basic.showIcon(IconNames.EigthNote)
+ボリューム = 20
+dfplayermini.setVolume(ボリューム)
