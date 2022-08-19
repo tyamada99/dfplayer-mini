@@ -11,7 +11,7 @@ MP3プレイヤーモジュール：[DFPlayer Mini](https://wiki.dfrobot.com/DFP
 ![接続例](/.github/images/sample.JPG)
 
 
-[^1]: ~~実は[公式のWiki](https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299)では、Arduinoでのシリアルポートとの接続で、RX側に1kΩの抵抗が入っています。  
+[^1]: 　~~実は[公式のWiki](https://wiki.dfrobot.com/DFPlayer_Mini_SKU_DFR0299)では、Arduinoでのシリアルポートとの接続で、RX側に1kΩの抵抗が入っています。  
 確かArduinoは5Vで動作すると思うので、これが電圧レベル変換もどきだとすると、micro:bitは3.3Vで動作するので、抵抗はいらないのではないかと勝手に想像して、1kΩの抵抗を入れずに接続させています。一応これで正常に動作しました。~~
 やっぱり3.3Vでも電流が流れすぎないように1kΩ程度の抵抗は入っていたほうが良いようです。
 
