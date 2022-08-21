@@ -7,7 +7,7 @@ MP3プレイヤーモジュール：[DFPlayer Mini](https://wiki.dfrobot.com/DFP
 接続は、micro:bitとは電源とUARTシリアルポートに接続します[^1] 。後、スピーカーと接続します。
 ![接続図](/.github/images/connection.png)
 
-以下の写真は、[KeyStudioのセンサーシールド](https://wiki.keyestudio.com/Ks0360_Keyestudio_Sensor_Shield_V2_for_BBC_micro:bit)を使用した例です。（本当は1kΩの抵抗を入れたほうがいいです。）
+以下の写真は、[KeyStudioのセンサーシールド](https://wiki.keyestudio.com/Ks0360_Keyestudio_Sensor_Shield_V2_for_BBC_micro:bit)を使用した例です。
 ![接続例](/.github/images/sample.JPG)
 
 
