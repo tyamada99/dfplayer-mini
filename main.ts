@@ -5,7 +5,7 @@ input.onButtonPressed(Button.A, function () {
     dfplayermini.setVolume(ボリューム)
     basic.showNumber(ボリューム)
     if (再生中) {
-        basic.showIcon(IconNames.EigthNote)
+        basic.showIcon(IconNames.EighthNote)
     }
 })
 input.onGesture(Gesture.Shake, function () {
@@ -21,7 +21,7 @@ input.onButtonPressed(Button.AB, function () {
     } else {
         再生中 = true
         dfplayermini.press(dfplayermini.playType.Play)
-        basic.showIcon(IconNames.EigthNote)
+        basic.showIcon(IconNames.EighthNote)
     }
 })
 input.onButtonPressed(Button.B, function () {
@@ -31,7 +31,7 @@ input.onButtonPressed(Button.B, function () {
     dfplayermini.setVolume(ボリューム)
     basic.showNumber(ボリューム)
     if (再生中) {
-        basic.showIcon(IconNames.EigthNote)
+        basic.showIcon(IconNames.EighthNote)
     }
 })
 let ボリューム = 0
@@ -41,5 +41,5 @@ basic.clearScreen()
 再生中 = false
 dfplayermini.press(dfplayermini.playType.Pause)
 dfplayermini.playLoopAllFiles()
-ボリューム = 20
+ボリューム = 10
 dfplayermini.setVolume(ボリューム)
